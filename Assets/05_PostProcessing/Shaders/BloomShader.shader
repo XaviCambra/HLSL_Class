@@ -74,7 +74,7 @@ Shader "Tecnocampus/BloomShader"
                 }
                 return float4(tex2D(_SourceTexture, IN.uv).xyz+l_Color * _BloomIntensity, 1.0);
             }
-                ENDCG
-    }
+            ENDCG
+        }
     }
 }
