@@ -1,0 +1,11 @@
+Visual Studio:
+ctrl + alt + l ->	Explorador de estudios
+ctrl + , ->		Buscar script por nombre
+ctrl + . ->		Crear script nuevo
+
+ctrl + F2 ->		Crear marca
+F2 / Shift F2 ->	Moverse entre marcas
+
+
+Shift + Insert =	Ctrl + V
+Ctrl + Backspace ->	Borrar palabra entera
