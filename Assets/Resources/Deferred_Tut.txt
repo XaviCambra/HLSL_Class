@@ -1,0 +1,19 @@
+struct DeferredFragmentColors
+{
+	float4 color0: COLOR0;
+	float4 color1: COLOR1;
+	float4 color2: COLOR2;
+}
+
+float3 Normal2Texture(float3 Normal)
+{
+	return (Normal+1.0)/0.5;
+}
+
+
+VS
+o.depth = o.vertex.zw;
+
+PS
+float l_Depth = i.depth.z / i.depth.w;
+l_Out.color2 =float4(l_Depth, l_Depth, l_Depth, l_Depth);
