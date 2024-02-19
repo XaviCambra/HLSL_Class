@@ -1,0 +1,24 @@
+10 preguntas tipo test
+	1.5 puntos
+	fallos -0.25
+
+3 shaders escritos a mano
+	5.5 puntos
+
+2 teoria
+	3 puntos
+
+Shaders importantes:
+AlphaTest
+AlphaBlend
+Billboard
+Blanco/negro
+Color
+Fog
+Grass
+Mixers
+Sepia
+Terreno
+Textura
+UVs
+(entra seguro) FullLighting
