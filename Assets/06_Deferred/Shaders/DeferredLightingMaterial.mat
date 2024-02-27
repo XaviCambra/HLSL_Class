@@ -8,9 +8,10 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: DeferredLightingMaterial
-  m_Shader: {fileID: 4800000, guid: eaca9c3adcd136044a993ede82f8106c, type: 3}
+  m_Shader: {fileID: 4800000, guid: 0b52bbcf17e3bed4ba94ba482eacc274, type: 3}
   m_ValidKeywords: []
-  m_InvalidKeywords: []
+  m_InvalidKeywords:
+  - _USESHADOWMAP_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -21,7 +22,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 738cadd601603144e810aa22d3cbff03, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RT0:
@@ -36,7 +37,8 @@ Material:
         m_Texture: {fileID: 8400000, guid: 2d044918464d98d4fbd877ad299b9dec, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    m_Ints: []
+    m_Ints:
+    - _UseShadowMap: 1
     m_Floats: []
     m_Colors: []
   m_BuildTextureStacks: []

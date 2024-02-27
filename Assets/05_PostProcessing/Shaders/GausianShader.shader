@@ -2,8 +2,14 @@ Shader "Tecnocampus/GausianShader"
 {
     Properties
     {
-        _MainTex("_MainTex", 2D) = "" {}
-        _SampleDistance("_SampleDistance", Float) = 0.5
+        _MainTex("Texture", 2D) = "white"{}
+        _RT2("Source Tex (Render Texture Depth)", 2D) = "white"{}
+        _SampleDistance("Sample distance", Range(1, 20.0)) = 1.0
+        _ZMinFocusDistance("Z min focus distance", float) = 3.0
+        _ZMaxFocusDistance("Z max focus distance", float) = 3.0
+        _ZMaxUnfocusDistance("Z max unfocus distance", float) = 5.0
+        _MinZBlurPct("Min ZBlur Pct", Range(0.0, 1.0)) = 0.0
+        _ShowDebug("Show debug", float) = 0.0
     }
     SubShader
     {

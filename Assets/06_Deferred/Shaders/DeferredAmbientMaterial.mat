@@ -30,8 +30,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AmbientIntensity: 1.687
+    - _AmbientIntensity: 0
     - _SpecularPower: 8
     m_Colors:
-    - _AmbientColor: {r: 0, g: 0.89716387, b: 1, a: 1}
+    - _AmbientColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
