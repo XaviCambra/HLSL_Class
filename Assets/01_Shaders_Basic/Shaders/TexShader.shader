@@ -34,15 +34,9 @@ Shader "Tecnocampus/TexShader"
             VERTEX_OUT vert(VERTEX_IN v)
             {
                 VERTEX_OUT o;
-                //o.vertex = UnityObjectToClipPos(v.vertex);
-                //o.vertex=mul(UNITY_MATRIX_MVP, float4(v.vertex.xyz, 1.0));
-                //o.vertex = mul(float4(v.vertex.xyz, 1.0), transpose(UNITY_MATRIX_MVP));
                 o.vertex = mul(unity_ObjectToWorld, float4(v.vertex.xyz, 1.0));
                 o.vertex = mul(UNITY_MATRIX_V, o.vertex);
                 o.vertex = mul(UNITY_MATRIX_P, o.vertex);
-
-                /* Misma operación */
-                //o.uv = TRANSFORM_TEX(v.uv, _MainTex);
                 o.uv = v.uv * _MainTex_ST.xy + _MainTex_ST.zw;
 
                 return o;
@@ -50,8 +44,7 @@ Shader "Tecnocampus/TexShader"
 
             fixed4 frag(VERTEX_OUT i) : SV_Target
             {
-                float4 l_Color = tex2D(_MainTex, i.uv);
-                return l_Color;
+                return tex2D(_MainTex, i.uv);
             }
                 ENDCG
     }
