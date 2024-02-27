@@ -27,6 +27,6 @@ Material:
     m_Ints: []
     m_Floats:
     - _AlphaClip: 0.51
-    - _Cutoff: 0.25
+    - _Cutoff: 0.684
     m_Colors: []
   m_BuildTextureStacks: []

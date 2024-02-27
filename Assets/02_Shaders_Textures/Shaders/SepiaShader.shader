@@ -36,9 +36,6 @@ Shader "Tecnocampus/SepiaShader"
             VERTEX_OUT vert(VERTEX_IN v)
             {
                 VERTEX_OUT o;
-                //o.vertex = UnityObjectToClipPos(v.vertex);
-                //o.vertex=mul(UNITY_MATRIX_MVP, float4(v.vertex.xyz, 1.0));
-                //o.vertex = mul(float4(v.vertex.xyz, 1.0), transpose(UNITY_MATRIX_MVP));
                 o.vertex = mul(unity_ObjectToWorld, float4(v.vertex.xyz, 1.0));
                 o.vertex = mul(UNITY_MATRIX_V, o.vertex);
                 o.vertex = mul(UNITY_MATRIX_P, o.vertex);

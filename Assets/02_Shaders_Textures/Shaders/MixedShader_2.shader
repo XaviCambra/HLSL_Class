@@ -48,7 +48,6 @@ Shader "Tecnocampus/MixedShader"
                 o.uv = v.uv;
                 o.uvBlack = TRANSFORM_TEX(v.uv, _BlackTex);
                 o.uvWhite = TRANSFORM_TEX(v.uv, _WhiteTex);
-
                 return o;
             }
 

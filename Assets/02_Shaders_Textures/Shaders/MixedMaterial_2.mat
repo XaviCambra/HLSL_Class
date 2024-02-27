@@ -26,7 +26,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _BlackTex:
         m_Texture: {fileID: 2800000, guid: 310061ced9f35d24b93d247fc45c486d, type: 3}
-        m_Scale: {x: 5, y: 5}
+        m_Scale: {x: 3, y: 3}
         m_Offset: {x: 0, y: 0}
     - _MixerBWMainTex:
         m_Texture: {fileID: 2800000, guid: 5a42109f545ae7e488c6ef47e0d59b8d, type: 3}

@@ -113,7 +113,7 @@ Shader "Tecnocampus/DeferredLightingShader"
                 float l_SpecularPower = 1.0 / l_AlbedoColor;
                 float Ks = pow(saturate(dot(Hn, Nn)), l_SpecularPower);
 
-                float3 l_SpecularLightning = Ks * l_Color.xyz * _LightColors * _LightProperties.y * l_Attenuation;
+                float3 l_SpecularLightning = Ks * l_Color.xyz * _LightColor.xyz * _LightProperties.y * l_Attenuation;
 
                 return float4(l_AlbedoColor.xyz + l_DifuseLightning + l_SpecularLightning, 1.0);
             }

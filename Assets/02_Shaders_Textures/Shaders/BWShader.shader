@@ -34,9 +34,6 @@ Shader "Tecnocampus/BWShader"
             VERTEX_OUT vert(VERTEX_IN v)
             {
                 VERTEX_OUT o;
-                //o.vertex = UnityObjectToClipPos(v.vertex);
-                //o.vertex=mul(UNITY_MATRIX_MVP, float4(v.vertex.xyz, 1.0));
-                //o.vertex = mul(float4(v.vertex.xyz, 1.0), transpose(UNITY_MATRIX_MVP));
                 o.vertex = mul(unity_ObjectToWorld, float4(v.vertex.xyz, 1.0));
                 o.vertex = mul(UNITY_MATRIX_V, o.vertex);
                 o.vertex = mul(UNITY_MATRIX_P, o.vertex);
@@ -52,10 +49,7 @@ Shader "Tecnocampus/BWShader"
                 // Invertir
                 //return l_Color.zyxw;
 
-                //return l_Color;
-
                 float l_BW = (l_Color.x + l_Color.y + l_Color.z) / 3.0;
-                //float l_BW = (l_Color.x * 0.3 + l_Color.y * 0.59 + l_Color.z * 0.11);
 
                 return l_BW;
 
