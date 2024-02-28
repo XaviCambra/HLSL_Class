@@ -151,16 +151,10 @@
                     float l_DistanceToPixel = length(l_LightDirectionNotNormalized);
                     l_LightDirection = l_LightDirectionNotNormalized / l_DistanceToPixel;
                     l_Attenuation = saturate(1.0 - l_DistanceToPixel / _LightProperties.x);
-
-<<<<<<< Updated upstream
-                float3 l_SpecularLightning = Ks * l_Color.xyz * _LightColor.xyz * _LightProperties.y * l_Attenuation;
-=======
                     if (_LightType == 0)
                     {
                         l_Attenuation *= saturate((dot(_LightDirection, normalize(l_WorldPosition - _LightPosition)) - _LightProperties.w) / (1.0 - _LightProperties.w));
                     }
->>>>>>> Stashed changes
-
                 }
 
                 float3 Reflected = normalize(reflect(Vn, Nn));
